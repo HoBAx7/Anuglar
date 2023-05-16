@@ -1,0 +1,13 @@
+<div class="main-container">
+  <app-demo></app-demo>
+  {{demoComp.fromDemoToAPP()}}
+  <app-cust-list #custVariable></app-cust-list>
+  <p *ngIf="custVariable.selectedCustomer !=''; else choose"><span>{{custVariable.selectedCustomer}}</span> SELECTED</p>
+  <ng-template #choose><p></p></ng-template>
+  <div class="date-container col-xl-12">
+    <label>DOB</label>
+    <input type="date" [ngClass]="[style]" (focus)="getFocused(1)" (blur)="blured(1)" #dateInput>
+    <label >AGE</label>
+    <input style="padding: 0%;" type="text" [ngClass]="[style2]" (focus)="getFocused(2)" (blur)="blured(2)" #ageInput>
+  </div>
+</div>

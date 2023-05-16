@@ -1,0 +1,11 @@
+<div class="col-8 col-sm-9 col-xl-4" style="text-align: center;padding:10px 0px;">
+    <input type="text" (input)="setText($event)" [ngClass]="[style]" (focus)="focusd(1)" (focusout)="focuseOut(1)" placeholder="a_bc@gmail.com">
+    <p [ngStyle]="{color: valid == 'VALID'? 'Green':' rgb(155, 148, 148)'}">{{text+' is '+valid}}</p>
+</div>
+<div class="col-8 col-sm-9 col-xl-4" style="text-align: center;padding:10px 0px;">
+    <input type="text" #myVariable (keyup)="0" [ngClass]="[style2]" (focus)="focusd(2)" (focusout)="focuseOut(2)" placeholder="John Wick">
+    <p>Name{{'  '+myVariable.value}}</p>
+    <button class="col-4 col-sm-5 col-xl-2" [ngClass]="[btnStyle]" (click)="goBtn(myVariable)">G O</button> 
+</div>
+
+

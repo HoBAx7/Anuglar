@@ -1,0 +1,28 @@
+p{
+    color: rgb(155, 148, 148);
+}
+.ss{
+    width: 55%;
+    transition-delay: 0.5s;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(119, 115, 115);
+    color: rgb(155, 148, 148);
+}
+.wow{
+    font-weight: 600;
+    color: rgb(172, 143, 130);
+    transition-delay: 0.5s;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    width: 65%;
+    border: none;
+    border-bottom: 1.5px solid rgb(245, 119, 36);
+}
+p{
+    font-size: 12px;
+}
+
+

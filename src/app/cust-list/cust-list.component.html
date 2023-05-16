@@ -1,0 +1,23 @@
+<table class="table tb">
+    <thead>
+        <tr>
+            <td class="">No</td>
+            <td class="col-2">Name</td>
+            <td class="col-2">Address</td>
+            <td class="col-2">city</td>
+            <td class="col-2">country</td>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of customer; let i=index">
+            <td>{{list.cutomerNo}}</td>
+            <td>{{list.name}}</td>
+            <td>{{list.address}}</td>
+            <td>{{list.city}}</td>
+            <td>{{list.country}}</td>
+            <td><button class="btnn col-s-8 col-xl-8"  value="{{i}}" #val (click)="goBtn(i,val,list)">Select</button></td>
+        </tr>
+    </tbody>
+</table>
+

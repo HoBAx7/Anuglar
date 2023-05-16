@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* --- style is been applied as an ViewEncapsulation.shadowDOM --- */
+[class*=btnclick], [class*=btnn]{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(119, 115, 115);
+    color: rgb(155, 148, 148);
+    font-weight: 600; 
+}
+[class*=btnn]:hover{
+    border: 1px solid rgb(168, 128, 54);
+    color: rgb(168, 128, 54);
+}
+[class*=btnclick]{
+    box-shadow: 1px 1px 1px rgb(168, 128, 54);
+}
